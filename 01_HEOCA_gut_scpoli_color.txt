@@ -147,3 +147,7 @@ PDE1C_ACSM3 positive cells	#C05E3F
 Thymocytes	#3C5939
 Antigen presenting cells	#844F4A
 Thymic epithelial cells	#867164
+
+plate_level_all = pd.read_csv(f"../db/gut_scpoli_color.txt",
+                sep='\t', header=None, index_col=0)
+plate_level_all = plate_level_all.to_dict()[1]
